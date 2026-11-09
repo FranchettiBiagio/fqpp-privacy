@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informativa sulla privacy — Franchetti QR Photo Pro</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.2rem; border-bottom: 1px solid #e5e5e5; padding-bottom: .3rem; }
+  .updated { color: #666; margin-top: 0; }
+  .lang { font-size: .9rem; color: #666; margin-bottom: 2rem; }
+  ul { padding-left: 1.3rem; }
+  code { background: #f2f2f2; padding: .1rem .3rem; border-radius: 4px; font-size: .92em; }
+  .box { background: #f7f7f7; border-left: 4px solid #b8860b; padding: .9rem 1.1rem; margin: 1.5rem 0; }
+  hr { border: 0; border-top: 1px solid #e5e5e5; margin: 3rem 0; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #111; color: #eee; }
+    h2 { border-color: #333; }
+    code, .box { background: #1e1e1e; }
+    .updated, .lang { color: #aaa; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Informativa sulla privacy</h1>
+<p class="updated">Franchetti QR Photo Pro — ultimo aggiornamento: 9 novembre 2026</p>
+<p class="lang"><a href="#english">English version below</a></p>
+
+<p>Franchetti QR Photo Pro è un programma locale per fotografi. Non è un
+servizio cloud e non richiede un account.</p>
+
+<h2>Nessuna telemetria</h2>
+<p>Il programma non invia statistiche, crash report, identificatori o contenuti
+a Franchetti, a terze parti o a server esterni. Le uniche connessioni di rete
+sono:</p>
+<ul>
+  <li>il server della galleria, attivo solo sulla rete locale (LAN/Wi-Fi) del
+      computer del fotografo;</li>
+  <li>il server FTP opzionale, anch'esso solo sulla rete locale;</li>
+  <li>i link esterni che l'utente apre volontariamente (per esempio WhatsApp,
+      Facebook, Instagram o il sito del fotografo) dalla galleria.</li>
+</ul>
+<p>Non sono presenti pubblicità, tracker o chiamate a servizi di analisi.</p>
+
+<h2>Dati sul computer del fotografo</h2>
+<p>La cartella dati cambia in base al tipo di installazione:</p>
+<ul>
+  <li>versione portatile: <code>data</code> accanto all'eseguibile, se la
+      cartella è scrivibile;</li>
+  <li>installer per singolo utente: <code>data</code> dentro
+      <code>%LOCALAPPDATA%\Programs\FranchettiQRPhotoPro</code>;</li>
+  <li>versione Microsoft Store:
+      <code>%USERPROFILE%\FranchettiQRPhotoPro</code>, perché la sandbox MSIX
+      cancellerebbe i dati in <code>%LOCALAPPDATA%</code> alla
+      disinstallazione.</li>
+</ul>
+<p>In questa cartella il programma conserva:</p>
+<ul>
+  <li>impostazioni del programma e del brand (<code>config.json</code>);</li>
+  <li>sessioni, metadati delle foto, database SQLite
+      (<code>fqpp.sqlite3</code>);</li>
+  <li>copie di lavoro in <code>Anteprime</code>, <code>Consegna</code>,
+      <code>cache</code> e <code>exports</code>;</li>
+  <li>log tecnici in <code>logs</code>;</li>
+  <li>statistiche locali di utilizzo della galleria: visite, foto viste,
+      condivisioni, telefoni distinti e orari delle visite.</li>
+</ul>
+<p>Queste informazioni restano sul computer e non vengono trasmesse. Le
+statistiche sono visibili solo al fotografo e possono essere cancellate insieme
+alla sessione o alla cartella dati.</p>
+
+<h2>Originali</h2>
+<p>Il programma non modifica, sposta o cancella mai i file originali della
+fotocamera. Le copie scaricabili dai clienti sono generate in cartelle derivate
+(<code>Anteprime</code>, <code>Consegna</code>) e non contengono GPS; riportano
+il copyright del fotografo.</p>
+
+<h2>Galleria e clienti</h2>
+<p>La galleria è raggiungibile solo dai dispositivi collegati alla stessa rete
+locale. I link possono essere protetti da token, scadenza, revoca e permessi
+per singolo QR. Il fotografo decide quali foto mostrare, se consentire cuori,
+note, scelte e download e se mostrare i propri contatti (Modalità
+Pubblicità).</p>
+<p>I dati inseriti dai clienti (preferenze, note, richieste di ritocco, scelte)
+sono salvati nel database locale della sessione e sono visibili solo al
+fotografo.</p>
+
+<h2>Responsabilità del fotografo</h2>
+<p>Il fotografo è il titolare del trattamento delle foto e dei dati dei
+clienti. Deve informare le persone fotografate, ottenere i consensi necessari
+(con particolare attenzione ai minori) e cancellare foto e dati quando non
+servono più. Il programma mette a disposizione gli strumenti tecnici; non
+gestisce consensi o richieste di cancellazione al posto del fotografo.</p>
+
+<h2>Cancellazione dei dati</h2>
+<p>Per eliminare tutto:</p>
+<ol>
+  <li>chiudere il programma;</li>
+  <li>cancellare la cartella dati indicata sopra (<code>data</code>, oppure
+      <code>%USERPROFILE%\FranchettiQRPhotoPro</code> per la versione Microsoft
+      Store);</li>
+  <li>se il programma è installato, usare "App e funzionalità" di Windows per
+      rimuoverlo.</li>
+</ol>
+<div class="box">
+  <p>La disinstallazione rimuove il programma ma lascia intatta la cartella
+  dati, così le sessioni non vengono perse per errore. La cancellazione dei
+  dati è quindi un'azione esplicita del fotografo.</p>
+</div>
+
+<hr>
+
+<h1 id="english">Privacy policy</h1>
+<p class="updated">Franchetti QR Photo Pro — last updated: 9 November 2026</p>
+
+<p>Franchetti QR Photo Pro is a local desktop application for photographers.
+It is not a cloud service and does not require an account.</p>
+
+<h2>No telemetry</h2>
+<p>The app does not send statistics, crash reports, identifiers or content to
+Franchetti, third parties or external servers. The only network connections
+are:</p>
+<ul>
+  <li>the gallery server, active only on the photographer's local network
+      (LAN/Wi-Fi);</li>
+  <li>the optional FTP server, also local network only;</li>
+  <li>external links the user chooses to open from the gallery (for example
+      WhatsApp, Facebook, Instagram or the photographer's website).</li>
+</ul>
+<p>There are no ads, trackers or analytics calls.</p>
+
+<h2>Data on the photographer's computer</h2>
+<p>The data folder depends on the installation type:</p>
+<ul>
+  <li>portable version: <code>data</code> next to the executable, when that
+      folder is writable;</li>
+  <li>per-user installer: <code>data</code> inside
+      <code>%LOCALAPPDATA%\Programs\FranchettiQRPhotoPro</code>;</li>
+  <li>Microsoft Store version: <code>%USERPROFILE%\FranchettiQRPhotoPro</code>,
+      because the MSIX sandbox would delete data in <code>%LOCALAPPDATA%</code>
+      on uninstall.</li>
+</ul>
+<p>The app stores settings and brand data, sessions and photo metadata in a
+local SQLite database, working copies (previews, delivery, cache, exports),
+technical logs and local gallery statistics. This information stays on the
+computer and is never transmitted. Statistics are visible only to the
+photographer and can be deleted with the session or the data folder.</p>
+
+<h2>Originals</h2>
+<p>The app never modifies, moves or deletes the camera originals. Client
+downloads are generated in derived folders and contain no GPS data; they carry
+the photographer's copyright.</p>
+
+<h2>Gallery and clients</h2>
+<p>The gallery is reachable only from devices on the same local network. Links
+can be protected with tokens, expiry, revocation and per-QR permissions. The
+photographer decides which photos to show and whether to allow hearts, notes,
+picks and downloads. Client input is stored in the local session database and
+is visible only to the photographer.</p>
+
+<h2>Photographer's responsibility</h2>
+<p>The photographer is the data controller for photos and client data, and is
+responsible for informing subjects, obtaining any required consent (especially
+for minors) and deleting data when it is no longer needed. The app provides
+technical tools only; it does not manage consent or deletion requests on the
+photographer's behalf.</p>
+
+<h2>Deleting data</h2>
+<p>To delete everything: close the app, delete the data folder described above,
+and uninstall the app from Windows "Apps &amp; features" if installed. The
+uninstaller removes the program but keeps the data folder, so sessions are not
+lost by accident.</p>
+
+</body>
+</html>
